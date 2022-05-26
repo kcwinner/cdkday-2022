@@ -1,0 +1,116 @@
+{
+  "graphDemo": {
+    "stacks": [
+      {
+        "id": "CDKDay-Datastore-graphDemo",
+        "name": "CDKDay-Datastore-graphDemo",
+        "region": "us-east-1",
+        "dependencies": []
+      },
+      {
+        "id": "CDKDay-Secrets-graphDemo",
+        "name": "CDKDay-Secrets-graphDemo",
+        "region": "us-east-1",
+        "dependencies": []
+      },
+      {
+        "id": "CDKDay-Ingestion-graphDemo",
+        "name": "CDKDay-Ingestion-graphDemo",
+        "region": "us-east-1",
+        "dependencies": []
+      },
+      {
+        "id": "CDKDay-Api-graphDemo",
+        "name": "CDKDay-Api-graphDemo",
+        "region": "us-east-1",
+        "dependencies": [
+          "CDKDay-Datastore-graphDemo",
+          "CDKDay-Secrets-graphDemo"
+        ]
+      },
+      {
+        "id": "CDKDay-AsyncJobs-graphDemo",
+        "name": "CDKDay-AsyncJobs-graphDemo",
+        "region": "us-east-1",
+        "dependencies": [
+          "CDKDay-Datastore-graphDemo",
+          "CDKDay-Secrets-graphDemo"
+        ]
+      },
+      {
+        "id": "CDKDay-Webhooks-graphDemo",
+        "name": "CDKDay-Webhooks-graphDemo",
+        "region": "us-east-1",
+        "dependencies": ["CDKDay-Secrets-graphDemo"]
+      },
+      {
+        "id": "CDKDay-Dashboard-graphDemo",
+        "name": "CDKDay-Dashboard-graphDemo",
+        "region": "us-east-1",
+        "dependencies": [
+          "CDKDay-Api-graphDemo",
+          "CDKDay-AsyncJobs-graphDemo",
+          "CDKDay-Webhooks-graphDemo",
+          "CDKDay-Datastore-graphDemo"
+        ]
+      }
+    ]
+  },
+  "graphProd": {
+    "stacks": [
+      {
+        "id": "CDKDay-Datastore-graphProd",
+        "name": "CDKDay-Datastore-graphProd",
+        "region": "us-east-1",
+        "dependencies": []
+      },
+      {
+        "id": "CDKDay-Secrets-graphProd",
+        "name": "CDKDay-Secrets-graphProd",
+        "region": "us-east-1",
+        "dependencies": []
+      },
+      {
+        "id": "CDKDay-Ingestion-graphProd",
+        "name": "CDKDay-Ingestion-graphProd",
+        "region": "us-east-1",
+        "dependencies": []
+      },
+      {
+        "id": "CDKDay-Api-graphProd",
+        "name": "CDKDay-Api-graphProd",
+        "region": "us-east-1",
+        "dependencies": [
+          "CDKDay-Datastore-graphProd",
+          "CDKDay-Secrets-graphProd"
+        ]
+      },
+      {
+        "id": "CDKDay-AsyncJobs-graphProd",
+        "name": "CDKDay-AsyncJobs-graphProd",
+        "region": "us-east-1",
+        "dependencies": [
+          "CDKDay-Datastore-graphProd",
+          "CDKDay-Secrets-graphProd"
+        ]
+      },
+      {
+        "id": "CDKDay-Webhooks-graphProd",
+        "name": "CDKDay-Webhooks-graphProd",
+        "region": "us-east-1",
+        "dependencies": ["CDKDay-Secrets-graphProd"]
+      },
+      {
+        "id": "CDKDay-Dashboard-graphProd",
+        "name": "CDKDay-Dashboard-graphProd",
+        "region": "us-east-1",
+        "dependencies": [
+          "CDKDay-Api-graphProd",
+          "CDKDay-AsyncJobs-graphProd",
+          "CDKDay-Webhooks-graphProd",
+          "CDKDay-Datastore-graphProd"
+        ]
+      }
+    ]
+  }
+}
