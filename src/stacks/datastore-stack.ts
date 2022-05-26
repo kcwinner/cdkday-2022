@@ -1,5 +1,6 @@
-import { AttributeType, BillingMode, Table } from "@aws-cdk/aws-dynamodb";
-import { Construct, RemovalPolicy, Stack, StackProps } from "@aws-cdk/core";
+import { RemovalPolicy, Stack, StackProps } from "aws-cdk-lib";
+import { AttributeType, BillingMode, Table } from "aws-cdk-lib/aws-dynamodb";
+import { Construct } from "constructs";
 
 export interface DataStoreStackProps extends StackProps {}
 

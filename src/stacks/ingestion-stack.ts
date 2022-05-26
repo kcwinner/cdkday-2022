@@ -1,7 +1,8 @@
-import { DeliveryStream } from "@aws-cdk/aws-kinesisfirehose";
-import { S3Bucket } from "@aws-cdk/aws-kinesisfirehose-destinations";
-import { Bucket } from "@aws-cdk/aws-s3";
-import { Construct, Stack, StackProps } from "@aws-cdk/core";
+import { DeliveryStream } from "@aws-cdk/aws-kinesisfirehose-alpha";
+import { S3Bucket } from "@aws-cdk/aws-kinesisfirehose-destinations-alpha";
+import { Stack, StackProps } from "aws-cdk-lib";
+import { Bucket } from "aws-cdk-lib/aws-s3";
+import { Construct } from "constructs";
 
 export interface IngestionStackProps extends StackProps {}
 

@@ -24,13 +24,11 @@
     "projen": "npx projen"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.157.0",
-    "@aws-cdk/assertions": "1.157.0",
     "@types/jest": "^27.5.1",
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk": "1.157.0",
+    "aws-cdk": "^2.24.0",
     "esbuild": "^0.14.39",
     "eslint": "^8",
     "eslint-config-prettier": "^8.5.0",
@@ -38,6 +36,7 @@
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "fs-extra": "^10.1.0",
     "jest": "^27",
     "jest-junit": "^13",
     "json-schema": "^0.4.0",
@@ -48,17 +47,10 @@
     "typescript": "^4.7.2"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "1.157.0",
-    "@aws-cdk/aws-cloudwatch": "1.157.0",
-    "@aws-cdk/aws-dynamodb": "1.157.0",
-    "@aws-cdk/aws-iam": "1.157.0",
-    "@aws-cdk/aws-kinesisfirehose": "1.157.0",
-    "@aws-cdk/aws-kinesisfirehose-destinations": "1.157.0",
-    "@aws-cdk/aws-lambda": "1.157.0",
-    "@aws-cdk/aws-s3": "1.157.0",
-    "@aws-cdk/aws-secretsmanager": "1.157.0",
-    "@aws-cdk/core": "1.157.0",
-    "constructs": "^3.2.27"
+    "@aws-cdk/aws-kinesisfirehose-alpha": "^2.25.0-alpha.0",
+    "@aws-cdk/aws-kinesisfirehose-destinations-alpha": "^2.25.0-alpha.0",
+    "aws-cdk-lib": "^2.24.0",
+    "constructs": "^10.0.5"
   },
   "license": "Apache-2.0",
   "version": "0.0.0",

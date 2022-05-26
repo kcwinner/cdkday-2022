@@ -1,7 +1,8 @@
-import { Table } from "@aws-cdk/aws-dynamodb";
-import { Code, Function, IFunction, Runtime } from "@aws-cdk/aws-lambda";
-import { Secret } from "@aws-cdk/aws-secretsmanager";
-import { Construct, Stack, StackProps } from "@aws-cdk/core";
+import { Stack, StackProps } from "aws-cdk-lib";
+import { Table } from "aws-cdk-lib/aws-dynamodb";
+import { Code, Function, IFunction, Runtime } from "aws-cdk-lib/aws-lambda";
+import { Secret } from "aws-cdk-lib/aws-secretsmanager";
+import { Construct } from "constructs";
 
 export interface AsyncJobsStackProps extends StackProps {
   table: Table;

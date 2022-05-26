@@ -1,5 +1,6 @@
-import { Secret } from "@aws-cdk/aws-secretsmanager";
-import { Construct, RemovalPolicy, Stack, StackProps } from "@aws-cdk/core";
+import { RemovalPolicy, Stack, StackProps } from "aws-cdk-lib";
+import { Secret } from "aws-cdk-lib/aws-secretsmanager";
+import { Construct } from "constructs";
 
 export class SecretsStack extends Stack {
   public readonly secretOne: Secret;

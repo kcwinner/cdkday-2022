@@ -1,4 +1,4 @@
-import { App } from "@aws-cdk/core";
+import { App } from "aws-cdk-lib";
 
 import { ApiStack } from "./stacks/api-stack";
 import { AsyncJobsStack } from "./stacks/async-jobs-stack";

@@ -8,27 +8,17 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   defaultReleaseBranch: "main",
   packageManager: javascript.NodePackageManager.NPM,
 
-  cdkVersion: "1.157.0", // we will switch to "2.24.0", cdkv2 later
-  cdkVersionPinning: true,
-  cdkDependencies: [
-    "@aws-cdk/aws-apigateway",
-    "@aws-cdk/aws-cloudwatch",
-    "@aws-cdk/aws-dynamodb",
-    "@aws-cdk/aws-kinesisfirehose",
-    "@aws-cdk/aws-kinesisfirehose-destinations",
-    "@aws-cdk/aws-iam",
-    "@aws-cdk/aws-lambda",
-    "@aws-cdk/aws-s3",
-    "@aws-cdk/aws-secretsmanager",
-
-    "@aws-cdk/core",
-  ],
+  cdkVersion: "2.24.0",
 
   eslintOptions: {
     prettier: true,
   },
 
-  devDeps: ["esbuild"],
+  devDeps: ["esbuild", "fs-extra"],
+  deps: [
+    "@aws-cdk/aws-kinesisfirehose-alpha",
+    "@aws-cdk/aws-kinesisfirehose-destinations-alpha",
+  ],
 
   // Turn these off for demo repo
   stale: false,

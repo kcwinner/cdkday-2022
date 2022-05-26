@@ -1,13 +1,14 @@
+import { Duration, Stack, StackProps } from "aws-cdk-lib";
 import {
   Dashboard,
   GraphWidget,
   GraphWidgetView,
   LegendPosition,
   MathExpression,
-} from "@aws-cdk/aws-cloudwatch";
-import { Table } from "@aws-cdk/aws-dynamodb";
-import { IFunction } from "@aws-cdk/aws-lambda";
-import { Construct, Duration, Stack, StackProps } from "@aws-cdk/core";
+} from "aws-cdk-lib/aws-cloudwatch";
+import { Table } from "aws-cdk-lib/aws-dynamodb";
+import { IFunction } from "aws-cdk-lib/aws-lambda";
+import { Construct } from "constructs";
 
 export interface DashboardStackProps extends StackProps {
   table: Table;
